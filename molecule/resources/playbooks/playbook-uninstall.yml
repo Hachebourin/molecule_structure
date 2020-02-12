@@ -1,0 +1,13 @@
+---
+
+- name: "Desinstallation httpd"
+  become: true
+  hosts: all
+  vars_files:
+    - ../vars/stuff.yml
+  roles:
+    - role: molecule_structure
+      vars:
+        molecule_structure_uninstall: true
+        molecule_structure_install: false
+        molecule_structure_configure: false

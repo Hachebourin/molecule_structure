@@ -1,0 +1,12 @@
+---
+- name: Uninstall httpd
+  become: true
+  yum:
+    name: httpd
+    state: absent
+
+- name: Remove custom index.html
+  become: true
+  file:
+    path: /var/www/html/index.html
+    state: absent

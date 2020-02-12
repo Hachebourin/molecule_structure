@@ -1,0 +1,5 @@
+---
+# defaults file for test
+molecule_structure_install: true
+molecule_structure_configure: true
+molecule_structure_uninstall: false

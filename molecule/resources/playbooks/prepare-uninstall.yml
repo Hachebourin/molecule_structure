@@ -1,0 +1,3 @@
+---
+- import_playbook: prepare-install.yml
+- import_playbook: playbook-install.yml

@@ -1,0 +1,10 @@
+---
+
+- name: "Installation des prerequis"
+  become: true
+  hosts: all
+  tasks:
+    - name: "Installation de vim"
+      yum:
+        name: 'vim'
+        state: 'present'

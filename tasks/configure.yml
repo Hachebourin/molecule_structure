@@ -1,0 +1,7 @@
+---
+- name: Custom index.html
+  become: true
+  copy:
+    src: index.html
+    dest: /var/www/html/
+  notify: molecule_structure_restart

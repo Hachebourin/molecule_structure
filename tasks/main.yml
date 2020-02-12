@@ -1,0 +1,12 @@
+---
+- name: "Desinstallation httpd"
+  import_tasks: uninstall.yml
+  when: molecule_structure_uninstall
+
+- name: "Installation de la souche"
+  import_tasks: install.yml
+  when: molecule_structure_install
+
+- name: "Configuration de httpd"
+  import_tasks: configure.yml
+  when: molecule_structure_configure

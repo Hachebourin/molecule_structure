@@ -1,0 +1,12 @@
+---
+galaxy_info:
+  author: Hachebourin
+  description: Role test molecule apache
+  company: Hachebourin
+  license: N/A
+  min_ansible_version: 2.4.3
+  platforms:
+    - name: EL
+      versions:
+        - 7
+dependencies: []
